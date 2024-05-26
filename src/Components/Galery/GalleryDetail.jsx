@@ -166,7 +166,7 @@ const GalleryDetail = () => {
             <img src={selectedImage.url} alt="Selected" />
           </div>
           <div className="flex justify-center items-center">
-            <p className="text-xl">{selectedImage.description}</p>
+            <p className="text-xl text-center">{selectedImage.description}</p>
           </div>
         </div>
       )}
