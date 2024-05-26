@@ -27,11 +27,11 @@
             },
             {
                 "url": "/construction/titanic_chantier_6.jpg",
-                "description": "Titanic construction workers on scaffolding."
+                "description": "Workers on the scaffolding of the Titanic."
             },
             {
                 "url": "/construction/titanic_chantier_7.jpg",
-                "description": "Titanic's hull taking shape at the shipyard."
+                "description": "The hull of the Titanic taking shape at the shipyard."
             },
             {
                 "url": "/construction/titanic_chantier_8.jpg",
@@ -39,7 +39,7 @@
             },
             {
                 "url": "/construction/titanic_chantier_9.jpg",
-                "description": "Scaffolding and materials used in Titanic's construction."
+                "description": "Scaffolding and materials used for the construction of the Titanic."
             },
             {
                 "url": "/construction/titanic_chantier_10.jpg",
@@ -47,15 +47,15 @@
             },
             {
                 "url": "/construction/titanic_chantier_2.jpg",
-                "description": "Early construction stages of the Titanic."
+                "description": "Early stages of the Titanic's construction."
             },
             {
                 "url": "/construction/titanic_chantier_2.jpg",
-                "description": "View of the shipyard during Titanic's construction."
+                "description": "View of the shipyard during the Titanic's construction."
             },
             {
                 "url": "/construction/titanic_chantier_2.jpg",
-                "description": "Construction workers on the hull of the Titanic."
+                "description": "Workers on the hull of the Titanic."
             },
             {
                 "url": "/construction/titanic_chantier_2.jpg",
@@ -63,11 +63,11 @@
             },
             {
                 "url": "/construction/titanic_chantier_2.jpg",
-                "description": "Scaffolding setup for Titanic's construction."
+                "description": "Scaffolding setup for the Titanic's construction."
             },
             {
                 "url": "/construction/titanic_chantier_2.jpg",
-                "description": "Titanic construction workers assembling the ship."
+                "description": "Workers assembling the Titanic."
             },
             {
                 "url": "/construction/titanic_chantier_2.jpg",
@@ -75,11 +75,11 @@
             },
             {
                 "url": "/construction/titanic_chantier_2.jpg",
-                "description": "Close-up of the Titanic under construction."
+                "description": "Close-up view of the Titanic under construction."
             },
             {
                 "url": "/construction/titanic_chantier_2.jpg",
-                "description": "Shipyard activity during Titanic's construction."
+                "description": "Shipyard activity during the Titanic's construction."
             },
             {
                 "url": "/construction/titanic_chantier_2.jpg",
@@ -93,72 +93,334 @@
     },
     {
         "id": 2,
-        "title": "Galerie 2",
+        "title": "Gallery 2",
+        "date": "1909",
         "mainImage": "/construction/titanic_chantier_2.jpg",
         "images": [
-            "/images/city1.jpg",
-            "/images/city2.jpg",
-            "/images/city3.jpg"
+            {
+                "url": "/construction/titanic_chantier_1.jpg",
+                "description": "Construction of the Titanic, initial stages."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Workers assembling the hull of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_3.jpg",
+                "description": "Close-up view of the Titanic's hull under construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_4.jpg",
+                "description": "Construction materials and scaffolding around the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_5.jpg",
+                "description": "Side view of the Titanic being built in the shipyard."
+            }
         ]
     },
     {
         "id": 3,
-        "title": "Galerie 3",
+        "title": "Gallery 3",
+        "date": "1909",
         "mainImage": "/construction/titanic_chantier_3.jpg",
         "images": [
-            "/images/animals1.jpg",
-            "/images/animals2.jpg",
-            "/images/animals3.jpg"
+            {
+                "url": "/construction/titanic_chantier_1.jpg",
+                "description": "Construction of the Titanic, initial stages."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Workers assembling the hull of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_3.jpg",
+                "description": "Close-up view of the Titanic's hull under construction."
+            }
         ]
     },
     {
         "id": 4,
-        "title": "Galerie 4",
+        "title": "Gallery 4",
+        "date": "1909",
         "mainImage": "/construction/titanic_chantier_4.jpg",
         "images": [
-            "/images/animals1.jpg",
-            "/images/animals2.jpg",
-            "/images/animals3.jpg"
+            {
+                "url": "/construction/titanic_chantier_1.jpg",
+                "description": "Construction of the Titanic, initial stages."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Workers assembling the hull of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_3.jpg",
+                "description": "Close-up view of the Titanic's hull under construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_4.jpg",
+                "description": "Construction materials and scaffolding around the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_5.jpg",
+                "description": "Side view of the Titanic being built in the shipyard."
+            },
+            {
+                "url": "/construction/titanic_chantier_6.jpg",
+                "description": "Workers on the scaffolding of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_7.jpg",
+                "description": "The hull of the Titanic taking shape at the shipyard."
+            }
         ]
     },
     {
         "id": 5,
-        "title": "Galerie 5",
+        "title": "Gallery 5",
+        "date": "1909",
         "mainImage": "/construction/titanic_chantier_5.jpg",
         "images": [
-            "/images/animals1.jpg",
-            "/images/animals2.jpg",
-            "/images/animals3.jpg"
+            {
+                "url": "/construction/titanic_chantier_1.jpg",
+                "description": "Construction of the Titanic, initial stages."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Workers assembling the hull of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_3.jpg",
+                "description": "Close-up view of the Titanic's hull under construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_4.jpg",
+                "description": "Construction materials and scaffolding around the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_5.jpg",
+                "description": "Side view of the Titanic being built in the shipyard."
+            },
+            {
+                "url": "/construction/titanic_chantier_6.jpg",
+                "description": "Workers on the scaffolding of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_7.jpg",
+                "description": "The hull of the Titanic taking shape at the shipyard."
+            },
+            {
+                "url": "/construction/titanic_chantier_8.jpg",
+                "description": "Another angle of the Titanic construction site."
+            },
+            {
+                "url": "/construction/titanic_chantier_9.jpg",
+                "description": "Scaffolding and materials used for the construction of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_10.jpg",
+                "description": "Workers and scaffolding around the Titanic."
+            }
         ]
     },
     {
         "id": 6,
-        "title": "Galerie 6",
+        "title": "Gallery 6",
+        "date": "1909",
         "mainImage": "/construction/titanic_chantier_6.jpg",
         "images": [
-            "/images/animals1.jpg",
-            "/images/animals2.jpg",
-            "/images/animals3.jpg"
+            {
+                "url": "/construction/titanic_chantier_1.jpg",
+                "description": "Construction of the Titanic, initial stages."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Workers assembling the hull of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_3.jpg",
+                "description": "Close-up view of the Titanic's hull under construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_4.jpg",
+                "description": "Construction materials and scaffolding around the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_5.jpg",
+                "description": "Side view of the Titanic being built in the shipyard."
+            },
+            {
+                "url": "/construction/titanic_chantier_6.jpg",
+                "description": "Workers on the scaffolding of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_7.jpg",
+                "description": "The hull of the Titanic taking shape at the shipyard."
+            },
+            {
+                "url": "/construction/titanic_chantier_8.jpg",
+                "description": "Another angle of the Titanic construction site."
+            }
         ]
     },
     {
         "id": 7,
-        "title": "Galerie 7",
+        "title": "Gallery 7",
+        "date": "1909",
         "mainImage": "/construction/titanic_chantier_7.jpg",
         "images": [
-            "/images/animals1.jpg",
-            "/images/animals2.jpg",
-            "/images/animals3.jpg"
+            {
+                "url": "/construction/titanic_chantier_1.jpg",
+                "description": "Construction of the Titanic, initial stages."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Workers assembling the hull of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_3.jpg",
+                "description": "Close-up view of the Titanic's hull under construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_4.jpg",
+                "description": "Construction materials and scaffolding around the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_5.jpg",
+                "description": "Side view of the Titanic being built in the shipyard."
+            },
+            {
+                "url": "/construction/titanic_chantier_6.jpg",
+                "description": "Workers on the scaffolding of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_7.jpg",
+                "description": "The hull of the Titanic taking shape at the shipyard."
+            },
+            {
+                "url": "/construction/titanic_chantier_8.jpg",
+                "description": "Another angle of the Titanic construction site."
+            },
+            {
+                "url": "/construction/titanic_chantier_9.jpg",
+                "description": "Scaffolding and materials used for the construction of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_10.jpg",
+                "description": "Workers and scaffolding around the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Early stages of the Titanic's construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "View of the shipyard during the Titanic's construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Workers on the hull of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Progress on the Titanic's hull at the shipyard."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Scaffolding setup for the Titanic's construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Workers assembling the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Overview of the Titanic construction process."
+            }
         ]
     },
     {
         "id": 8,
-        "title": "Galerie 8",
+        "title": "Gallery 8",
+        "date": "1909",
         "mainImage": "/construction/titanic_chantier_8.jpg",
         "images": [
-            "/images/animals1.jpg",
-            "/images/animals2.jpg",
-            "/images/animals3.jpg"
+            {
+                "url": "/construction/titanic_chantier_1.jpg",
+                "description": "Construction of the Titanic, initial stages."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Workers assembling the hull of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_3.jpg",
+                "description": "Close-up view of the Titanic's hull under construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_4.jpg",
+                "description": "Construction materials and scaffolding around the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_5.jpg",
+                "description": "Side view of the Titanic being built in the shipyard."
+            },
+            {
+                "url": "/construction/titanic_chantier_6.jpg",
+                "description": "Workers on the scaffolding of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_7.jpg",
+                "description": "The hull of the Titanic taking shape at the shipyard."
+            },
+            {
+                "url": "/construction/titanic_chantier_8.jpg",
+                "description": "Another angle of the Titanic construction site."
+            },
+            {
+                "url": "/construction/titanic_chantier_9.jpg",
+                "description": "Scaffolding and materials used for the construction of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_10.jpg",
+                "description": "Workers and scaffolding around the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Early stages of the Titanic's construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "View of the shipyard during the Titanic's construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Workers on the hull of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Progress on the Titanic's hull at the shipyard."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Scaffolding setup for the Titanic's construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Workers assembling the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Overview of the Titanic construction process."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Close-up view of the Titanic under construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Shipyard activity during the Titanic's construction."
+            }
         ]
     }
 ]
