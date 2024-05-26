@@ -1,0 +1,164 @@
+[
+    {
+        "id": 1,
+        "title": "Le Début",
+        "date": "1909",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            {
+                "url": "/construction/titanic_chantier_1.jpg",
+                "description": "Construction du Titanic, premières étapes."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Travailleurs assemblant la coque du Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_3.jpg",
+                "description": "Vue rapprochée de la coque du Titanic en construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_4.jpg",
+                "description": "Matériaux de construction et échafaudages autour du Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_5.jpg",
+                "description": "Vue latérale du Titanic en construction dans le chantier naval."
+            },
+            {
+                "url": "/construction/titanic_chantier_6.jpg",
+                "description": "Travailleurs sur les échafaudages du Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_7.jpg",
+                "description": "La coque du Titanic prenant forme au chantier naval."
+            },
+            {
+                "url": "/construction/titanic_chantier_8.jpg",
+                "description": "Un autre angle du site de construction du Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_9.jpg",
+                "description": "Échafaudages et matériaux utilisés pour la construction du Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_10.jpg",
+                "description": "Travailleurs et échafaudages autour du Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Premières étapes de la construction du Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Vue du chantier naval pendant la construction du Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Travailleurs sur la coque du Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Progrès sur la coque du Titanic au chantier naval."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Installation des échafaudages pour la construction du Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Travailleurs assemblant le Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Aperçu du processus de construction du Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Vue rapprochée du Titanic en construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Activité du chantier naval pendant la construction du Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Une autre vue de l'assemblage de la coque du Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_3.png",
+                "description": "Section finie de la coque du Titanic."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Galerie 2",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            "/images/city1.jpg",
+            "/images/city2.jpg",
+            "/images/city3.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Galerie 3",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            "/images/animals1.jpg",
+            "/images/animals2.jpg",
+            "/images/animals3.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Galerie 4",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            "/images/animals1.jpg",
+            "/images/animals2.jpg",
+            "/images/animals3.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Galerie 5",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            "/images/animals1.jpg",
+            "/images/animals2.jpg",
+            "/images/animals3.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Galerie 6",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            "/images/animals1.jpg",
+            "/images/animals2.jpg",
+            "/images/animals3.jpg"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Galerie 7",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            "/images/animals1.jpg",
+            "/images/animals2.jpg",
+            "/images/animals3.jpg"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Galerie 8",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            "/images/animals1.jpg",
+            "/images/animals2.jpg",
+            "/images/animals3.jpg"
+        ]
+    }
+]

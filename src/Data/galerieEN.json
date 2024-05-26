@@ -1,0 +1,164 @@
+[
+    {
+        "id": 1,
+        "title": "The Beginning",
+        "date": "1909",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            {
+                "url": "/construction/titanic_chantier_1.jpg",
+                "description": "Construction of the Titanic, initial stages."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Workers assembling the hull of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_3.jpg",
+                "description": "Close-up view of the Titanic's hull under construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_4.jpg",
+                "description": "Construction materials and scaffolding around the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_5.jpg",
+                "description": "Side view of the Titanic being built in the shipyard."
+            },
+            {
+                "url": "/construction/titanic_chantier_6.jpg",
+                "description": "Titanic construction workers on scaffolding."
+            },
+            {
+                "url": "/construction/titanic_chantier_7.jpg",
+                "description": "Titanic's hull taking shape at the shipyard."
+            },
+            {
+                "url": "/construction/titanic_chantier_8.jpg",
+                "description": "Another angle of the Titanic construction site."
+            },
+            {
+                "url": "/construction/titanic_chantier_9.jpg",
+                "description": "Scaffolding and materials used in Titanic's construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_10.jpg",
+                "description": "Workers and scaffolding around the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Early construction stages of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "View of the shipyard during Titanic's construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Construction workers on the hull of the Titanic."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Progress on the Titanic's hull at the shipyard."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Scaffolding setup for Titanic's construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Titanic construction workers assembling the ship."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Overview of the Titanic construction process."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Close-up of the Titanic under construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Shipyard activity during Titanic's construction."
+            },
+            {
+                "url": "/construction/titanic_chantier_2.jpg",
+                "description": "Another view of the Titanic's hull assembly."
+            },
+            {
+                "url": "/construction/titanic_chantier_3.png",
+                "description": "Finished section of the Titanic's hull."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Galerie 2",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            "/images/city1.jpg",
+            "/images/city2.jpg",
+            "/images/city3.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Galerie 3",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            "/images/animals1.jpg",
+            "/images/animals2.jpg",
+            "/images/animals3.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Galerie 4",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            "/images/animals1.jpg",
+            "/images/animals2.jpg",
+            "/images/animals3.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Galerie 5",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            "/images/animals1.jpg",
+            "/images/animals2.jpg",
+            "/images/animals3.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Galerie 6",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            "/images/animals1.jpg",
+            "/images/animals2.jpg",
+            "/images/animals3.jpg"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Galerie 7",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            "/images/animals1.jpg",
+            "/images/animals2.jpg",
+            "/images/animals3.jpg"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Galerie 8",
+        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "images": [
+            "/images/animals1.jpg",
+            "/images/animals2.jpg",
+            "/images/animals3.jpg"
+        ]
+    }
+]
