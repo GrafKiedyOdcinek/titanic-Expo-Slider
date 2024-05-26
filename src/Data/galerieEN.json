@@ -94,7 +94,7 @@
     {
         "id": 2,
         "title": "Galerie 2",
-        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "mainImage": "/construction/titanic_chantier_2.jpg",
         "images": [
             "/images/city1.jpg",
             "/images/city2.jpg",
@@ -104,7 +104,7 @@
     {
         "id": 3,
         "title": "Galerie 3",
-        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "mainImage": "/construction/titanic_chantier_3.jpg",
         "images": [
             "/images/animals1.jpg",
             "/images/animals2.jpg",
@@ -114,7 +114,7 @@
     {
         "id": 4,
         "title": "Galerie 4",
-        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "mainImage": "/construction/titanic_chantier_4.jpg",
         "images": [
             "/images/animals1.jpg",
             "/images/animals2.jpg",
@@ -124,7 +124,7 @@
     {
         "id": 5,
         "title": "Galerie 5",
-        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "mainImage": "/construction/titanic_chantier_5.jpg",
         "images": [
             "/images/animals1.jpg",
             "/images/animals2.jpg",
@@ -134,7 +134,7 @@
     {
         "id": 6,
         "title": "Galerie 6",
-        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "mainImage": "/construction/titanic_chantier_6.jpg",
         "images": [
             "/images/animals1.jpg",
             "/images/animals2.jpg",
@@ -144,7 +144,7 @@
     {
         "id": 7,
         "title": "Galerie 7",
-        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "mainImage": "/construction/titanic_chantier_7.jpg",
         "images": [
             "/images/animals1.jpg",
             "/images/animals2.jpg",
@@ -154,7 +154,7 @@
     {
         "id": 8,
         "title": "Galerie 8",
-        "mainImage": "/construction/titanic_chantier_1.jpg",
+        "mainImage": "/construction/titanic_chantier_8.jpg",
         "images": [
             "/images/animals1.jpg",
             "/images/animals2.jpg",
