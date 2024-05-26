@@ -54,8 +54,10 @@ const GalleryDetail = () => {
           </button>
         </Link>
         <div className="grade flex flex-col gap-1 justify-center w-full text-4xl items-center">
-          <h1 className="benchnine-bold uppercase">{gallery?.title}</h1>
-          <p className="font-brygada">{gallery?.date}</p>
+          <h1 className="benchnine-bold uppercase text-center">
+            {gallery?.title}
+          </h1>
+          <p className="font-brygada text-center">{gallery?.date}</p>
         </div>
         <div className="language flex gap-6">
           <Popover placement="bottom-end">
