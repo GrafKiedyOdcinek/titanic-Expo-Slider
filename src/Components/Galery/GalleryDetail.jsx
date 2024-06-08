@@ -1,4 +1,3 @@
-// src/GalleryDetail.js
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import {
@@ -43,6 +42,12 @@ const GalleryDetail = () => {
 
   const handleCloseModal = () => {
     setSelectedImage(null);
+  };
+
+  const getRandomWidth = () => {
+    const min = 250;
+    const max = 1000;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   };
 
   return (
@@ -110,53 +115,46 @@ const GalleryDetail = () => {
             horizontal={true}
           >
             <div id="scrollableDiv" className="gallery-scroll">
-              {items.map((item, index) => {
-                if (index % 3 === 0) {
-                  return (
+              <div className="gallery-row">
+                {items
+                  .filter((_, index) => index % 2 === 0)
+                  .map((item, index) => (
                     <div
                       key={index}
-                      className="gallery-images large"
+                      className="gallery-image"
                       onClick={() =>
                         handleImageClick(item.url, item.description)
                       }
+                      style={{ width: getRandomWidth(), height: "300px" }}
                     >
                       <img
                         src={item?.url}
                         alt={`${item?.description} ${index + 1}`}
+                        style={{ height: "100%" }}
                       />
                     </div>
-                  );
-                } else if ((index - 1) % 3 === 0) {
-                  return (
+                  ))}
+              </div>
+              <div className="gallery-row">
+                {items
+                  .filter((_, index) => index % 2 !== 0)
+                  .map((item, index) => (
                     <div
                       key={index}
-                      className="gallery-images small flex flex-col"
+                      className="gallery-image"
+                      onClick={() =>
+                        handleImageClick(item.url, item.description)
+                      }
+                      style={{ width: getRandomWidth(), height: "300px" }}
                     >
                       <img
                         src={item?.url}
                         alt={`${item?.description} ${index + 1}`}
-                        onClick={() =>
-                          handleImageClick(item.url, item.description)
-                        }
+                        style={{ height: "100%" }}
                       />
-                      {index + 1 < items.length && (
-                        <img
-                          src={items[index + 1].url}
-                          alt={`${items[index + 1].description} ${index + 2}`}
-                          onClick={() =>
-                            handleImageClick(
-                              items[index + 1].url,
-                              items[index + 1].description
-                            )
-                          }
-                        />
-                      )}
                     </div>
-                  );
-                } else {
-                  return null;
-                }
-              })}
+                  ))}
+              </div>
             </div>
           </InfiniteScroll>
         </div>

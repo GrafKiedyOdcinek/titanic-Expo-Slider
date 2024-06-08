@@ -105,40 +105,28 @@ h1 {
 
 .gallery-scroll {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
   overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 35px;
+}
+
+.gallery-row {
+  display: flex;
   gap: 1rem;
 }
 
-.gallery-images {
-  margin: 10px;
+.gallery-image {
   flex: 0 0 auto;
 }
 
-.gallery-images img {
+.gallery-image img {
   object-fit: cover;
-}
-
-.gallery-images.large img {
-  width: 400px;
-  height: 616px;
-  border-radius: 20px;
+  border-radius: 10px;
   background: white;
   padding: 10px;
-}
-
-.gallery-images.small img {
-  width: 200px;
   height: 300px;
-  border-radius: 20px;
-  background: white;
-  padding: 10px;
-}
-
-.gallery-images.small {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  width: 100%;
 }
 
 /* Style de la scrollbar */
@@ -151,14 +139,9 @@ h1 {
 }
 
 .gallery-scroll::-webkit-scrollbar-thumb {
-  background: rgba(
-    255,
-    255,
-    255,
-    0.5
-  ); /* Fond semi-transparent pour le thumb */
-  border: 2px solid white; /* Bordure blanche */
-  border-radius: 10px; /* Rayon des bordures */
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid white;
+  border-radius: 10px;
 }
 
 /* Styles pour la modale */
@@ -195,19 +178,11 @@ h1 {
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .gallery-images.large img {
-    width: 200px;
-    height: 400px;
-    border-radius: 20px;
-    background: #fff;
-    padding: 10px;
+  .gallery-image img {
+    width: 100%;
+    height: auto;
   }
-
-  .gallery-images.small img {
-    width: 200px;
-    height: 194px;
-    border-radius: 20px;
-    background: white;
-    padding: 10px;
-  }
+}
+.infinite-scroll-component__outerdiv {
+  overflow-x: auto;
 }

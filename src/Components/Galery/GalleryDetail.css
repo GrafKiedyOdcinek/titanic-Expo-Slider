@@ -1,0 +1,34 @@
+.gallery-scroll {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 10px; /* Ajustez l'espacement entre les images selon vos besoins */
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 600px; /* Ajustez cette hauteur selon vos besoins */
+}
+
+span {
+  display: block;
+}
+
+.rc-w-200 {
+  grid-column-end: span 1;
+}
+
+.rc-w-300 {
+  grid-column-end: span 1.5;
+}
+
+.rc-h-200 {
+  grid-row-end: span 1;
+}
+
+.rc-h-300 {
+  grid-row-end: span 1.5;
+}
+
+.gallery-container {
+  height: 600px; /* Ajustez cette hauteur selon vos besoins */
+}
