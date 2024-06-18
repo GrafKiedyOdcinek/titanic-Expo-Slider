@@ -44,11 +44,11 @@ const GalleryDetail = () => {
     setSelectedImage(null);
   };
 
-  const getRandomWidth = () => {
-    const min = 250;
-    const max = 1000;
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  };
+  // const getRandomWidth = () => {
+  //   const min = 250;
+  //   const max = 1000;
+  //   return Math.floor(Math.random() * (max - min + 1)) + min;
+  // };
 
   return (
     <div className="p-4">
