@@ -9,8 +9,7 @@
   line-height: 1.5;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.87);
-  background: #0d1625;
-  background-image: url("/bg.png");
+  background: #11202f;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -123,7 +122,6 @@ h1 {
 .gallery-image img {
   object-fit: cover;
   border-radius: 10px;
-  background: white;
   padding: 10px;
   height: 300px;
   width: 100%;
