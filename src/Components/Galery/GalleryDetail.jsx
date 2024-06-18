@@ -125,7 +125,7 @@ const GalleryDetail = () => {
                       onClick={() =>
                         handleImageClick(item.url, item.description)
                       }
-                      style={{ width: getRandomWidth(), height: "300px" }}
+                      style={{ height: "400px" }}
                     >
                       <img
                         src={item?.url}
@@ -145,7 +145,7 @@ const GalleryDetail = () => {
                       onClick={() =>
                         handleImageClick(item.url, item.description)
                       }
-                      style={{ width: getRandomWidth(), height: "300px" }}
+                      style={{ height: "400px" }}
                     >
                       <img
                         src={item?.url}
