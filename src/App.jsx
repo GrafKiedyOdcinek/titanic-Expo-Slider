@@ -10,6 +10,7 @@ import {
 import galeryDataEN from "./Data/galerieEN.json";
 import galeryDataFR from "./Data/galerieFR.json";
 import GalleryList from "./Components/Galery/GalleryList";
+import Ornement from "./Components/ornements/Ornements";
 
 function App() {
   const [data, setData] = useState([]);
@@ -98,6 +99,7 @@ function App() {
       <main className="p-10">
         <GalleryList data={data} />
       </main>
+      <Ornement />
     </div>
   );
 }
