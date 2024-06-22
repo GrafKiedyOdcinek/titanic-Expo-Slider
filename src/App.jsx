@@ -11,6 +11,7 @@ import galeryDataEN from "./Data/galerieEN.json";
 import galeryDataFR from "./Data/galerieFR.json";
 import GalleryList from "./Components/Galery/GalleryList";
 import Ornement from "./Components/ornements/Ornements";
+import { Link } from "react-router-dom";
 
 function App() {
   const [data, setData] = useState([]);
@@ -51,6 +52,13 @@ function App() {
   return (
     <div className="p-4">
       <header className="flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="goback">
+          <Link to="/" className="text-2xl font-bold">
+            <button className="border rounded-full w-32 p-2 text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white">
+              <i className="fa-solid fa-arrow-left text-black"></i>
+            </button>
+          </Link>
+        </div>
         <div className="grade flex flex-col gap-1 justify-center w-full text-4xl items-center">
           <h1 className="benchnine-bold">{getTranslation("title")}</h1>
           <p className="font-brygada">{getTranslation("date")}</p>
