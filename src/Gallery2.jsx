@@ -9,7 +9,7 @@ import {
 
 import galeryDataEN from "./Data/LaunchingEN.json";
 import galeryDataFR from "./Data/LaunchingFR.json";
-import GalleryList from "./Components/Galery/GalleryList";
+import GalleryListLaunching from "./Components/Galery/GalleryListLaunching";
 import Ornement from "./Components/ornements/Ornements";
 import { Link } from "react-router-dom";
 
@@ -103,7 +103,7 @@ function Gallery2() {
       </header>
       <div className="separator border mt-6"></div>
       <main className="p-10">
-        <GalleryList data={data} />
+        <GalleryListLaunching data={data} />
       </main>
       <Ornement />
     </div>
