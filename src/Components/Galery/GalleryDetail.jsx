@@ -179,7 +179,7 @@ const GalleryDetail = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              className="border rounded-full w-16 h-16 flex justify-center items-center text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white absolute left-4"
+              className="border rounded-full w-16 h-16 flex justify-center items-center text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white absolute left-[-3rem]"
               onClick={handlePrevImage}
             >
               <i className="fa-solid fa-arrow-left text-black"></i>
@@ -190,7 +190,7 @@ const GalleryDetail = () => {
               className="max-h-full max-w-full"
             />
             <button
-              className="border rounded-full w-16 h-16 flex justify-center items-center text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white absolute right-4"
+              className="border rounded-full w-16 h-16 flex justify-center items-center text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white absolute right-[-3rem]"
               onClick={handleNextImage}
             >
               <i className="fa-solid fa-arrow-right text-black"></i>
