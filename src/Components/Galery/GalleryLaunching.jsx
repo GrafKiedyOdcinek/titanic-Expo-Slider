@@ -17,6 +17,7 @@ const GalleryLaunching = () => {
   );
   const [items, setItems] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(null);
 
   const data = language === "FR" ? galeryDataFR : galeryDataEN;
   const gallery = data.find((gallery) => gallery.id.toString() === id);
@@ -36,19 +37,30 @@ const GalleryLaunching = () => {
     return <p>Gallery not found</p>;
   }
 
-  const handleImageClick = (url, description) => {
-    setSelectedImage({ url, description });
+  const handleImageClick = (index) => {
+    setSelectedImage(items[index]);
+    setCurrentIndex(index);
   };
 
   const handleCloseModal = () => {
     setSelectedImage(null);
+    setCurrentIndex(null);
   };
 
-  // const getRandomWidth = () => {
-  //   const min = 250;
-  //   const max = 1000;
-  //   return Math.floor(Math.random() * (max - min + 1)) + min;
-  // };
+  const handlePrevImage = () => {
+    const newIndex = (currentIndex - 1 + items.length) % items.length;
+    setSelectedImage(items[newIndex]);
+    setCurrentIndex(newIndex);
+  };
+
+  const handleNextImage = () => {
+    const newIndex = (currentIndex + 1) % items.length;
+    setSelectedImage(items[newIndex]);
+    setCurrentIndex(newIndex);
+  };
+
+  const evenItems = items.filter((_, index) => index % 2 === 0);
+  const oddItems = items.filter((_, index) => index % 2 !== 0);
 
   return (
     <div className="p-4">
@@ -116,44 +128,36 @@ const GalleryLaunching = () => {
           >
             <div id="scrollableDiv" className="gallery-scroll">
               <div className="gallery-row">
-                {items
-                  .filter((_, index) => index % 2 === 0)
-                  .map((item, index) => (
-                    <div
-                      key={index}
-                      className="gallery-image"
-                      onClick={() =>
-                        handleImageClick(item.url, item.description)
-                      }
-                      style={{ height: "400px" }}
-                    >
-                      <img
-                        src={item?.url}
-                        alt={`${item?.description} ${index + 1}`}
-                        style={{ height: "100%" }}
-                      />
-                    </div>
-                  ))}
+                {evenItems.map((item, index) => (
+                  <div
+                    key={index}
+                    className="gallery-image"
+                    onClick={() => handleImageClick(index * 2)}
+                    style={{ height: "400px" }}
+                  >
+                    <img
+                      src={item?.url}
+                      alt={`${item?.description} ${index * 2 + 1}`}
+                      style={{ height: "100%" }}
+                    />
+                  </div>
+                ))}
               </div>
               <div className="gallery-row">
-                {items
-                  .filter((_, index) => index % 2 !== 0)
-                  .map((item, index) => (
-                    <div
-                      key={index}
-                      className="gallery-image"
-                      onClick={() =>
-                        handleImageClick(item.url, item.description)
-                      }
-                      style={{ height: "400px" }}
-                    >
-                      <img
-                        src={item?.url}
-                        alt={`${item?.description} ${index + 1}`}
-                        style={{ height: "100%" }}
-                      />
-                    </div>
-                  ))}
+                {oddItems.map((item, index) => (
+                  <div
+                    key={index}
+                    className="gallery-image"
+                    onClick={() => handleImageClick(index * 2 + 1)}
+                    style={{ height: "400px" }}
+                  >
+                    <img
+                      src={item?.url}
+                      alt={`${item?.description} ${index * 2 + 2}`}
+                      style={{ height: "100%" }}
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </InfiniteScroll>
@@ -161,11 +165,38 @@ const GalleryLaunching = () => {
       </main>
 
       {selectedImage && (
-        <div className="modal" onClick={handleCloseModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={selectedImage.url} alt="Selected" />
+        <div className="modal relative" onClick={handleCloseModal}>
+          <div className="close">
+            <button
+              className="border rounded-full w-32 p-2 text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white"
+              onClick={handleCloseModal}
+            >
+              <i className="fa-solid fa-times text-black"></i>
+            </button>
           </div>
-          <div className="flex justify-center items-center">
+          <div
+            className="modal-content flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="border rounded-full w-16 h-16 flex justify-center items-center text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white absolute left-[-3rem]"
+              onClick={handlePrevImage}
+            >
+              <i className="fa-solid fa-arrow-left text-black"></i>
+            </button>
+            <img
+              src={selectedImage.url}
+              alt="Selected"
+              className="max-h-full max-w-full"
+            />
+            <button
+              className="border rounded-full w-16 h-16 flex justify-center items-center text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white absolute right-[-3rem]"
+              onClick={handleNextImage}
+            >
+              <i className="fa-solid fa-arrow-right text-black"></i>
+            </button>
+          </div>
+          <div className="flex justify-center items-center mt-4">
             <p className="text-xl text-center">{selectedImage.description}</p>
           </div>
         </div>
