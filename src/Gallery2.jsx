@@ -53,7 +53,7 @@ function Gallery2() {
     <div className="p-4">
       <header className="flex flex-col sm:flex-row justify-between items-center gap-4">
         <Link to="/" className="text-2xl font-bold">
-          <button className="border rounded-full w-32 p-2 text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white">
+          <button className="border rounded-full w-32 p-2 text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white ripple">
             <i className="fa-solid fa-arrow-left text-black"></i>
           </button>
         </Link>

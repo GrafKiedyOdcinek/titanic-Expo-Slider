@@ -66,7 +66,7 @@ const GalleryLaunching = () => {
     <div className="p-4">
       <header className="flex flex-col sm:flex-row justify-between items-center gap-4">
         <Link to="/launching" className="text-2xl font-bold">
-          <button className="border rounded-full w-32 p-2 text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white">
+          <button className="border rounded-full w-32 p-2 text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white ripple">
             <i className="fa-solid fa-arrow-left text-black"></i>
           </button>
         </Link>
@@ -168,7 +168,7 @@ const GalleryLaunching = () => {
         <div className="modal relative" onClick={handleCloseModal}>
           <div className="close">
             <button
-              className="border rounded-full w-32 p-2 text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white"
+              className="border rounded-full w-32 p-2 text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white ripple"
               onClick={handleCloseModal}
             >
               <i className="fa-solid fa-times text-black"></i>
@@ -179,7 +179,7 @@ const GalleryLaunching = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              className="border rounded-full w-16 h-16 flex justify-center items-center text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white absolute left-[-3rem]"
+              className="border rounded-full w-16 h-16 flex justify-center items-center text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white absolute left-[-3rem] ripple"
               onClick={handlePrevImage}
             >
               <i className="fa-solid fa-arrow-left text-black"></i>
@@ -190,7 +190,7 @@ const GalleryLaunching = () => {
               className="max-h-full max-w-full"
             />
             <button
-              className="border rounded-full w-16 h-16 flex justify-center items-center text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white absolute right-[-3rem]"
+              className="border rounded-full w-16 h-16 flex justify-center items-center text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white absolute right-[-3rem] ripple"
               onClick={handleNextImage}
             >
               <i className="fa-solid fa-arrow-right text-black"></i>
