@@ -12,6 +12,7 @@ import galeryDataFR from "./Data/galerieFR.json";
 import GalleryList from "./Components/Galery/GalleryList";
 import Ornement from "./Components/ornements/Ornements";
 import { Link } from "react-router-dom";
+import FullScreenButton from "./Components/Fullscreen";
 
 function App() {
   const [data, setData] = useState([]);
@@ -108,6 +109,7 @@ function App() {
         <GalleryList data={data} />
       </main>
       <Ornement />
+      <FullScreenButton />
     </div>
   );
 }

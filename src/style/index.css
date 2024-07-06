@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,7 +21,7 @@ h1 {
 }
 
 .font-brygada {
-  font-family: "Brygada 1918";
+  font-family: "Times New Roman";
   font-weight: 700;
   font-optical-sizing: auto;
   font-style: normal;
@@ -30,14 +29,14 @@ h1 {
 }
 
 .benchnine-bold {
-  font-family: "BenchNine";
+  font-family: "Bebas Neue";
   font-weight: 700;
   font-style: normal;
   font-size: 2em;
 }
 
 .benchnine {
-  font-family: "BenchNine";
+  font-family: "Bebas Neue";
   font-weight: 700;
   font-style: normal;
   font-size: 1.9em;
@@ -73,8 +72,7 @@ h1 {
 .gallery-item img {
   object-fit: cover;
   border-radius: 20px;
-
-  box-shadow: -20px -20px 0px -7px rgba(255, 255, 255, 1);
+  box-shadow: -20px -20px 0px -7px rgb(255 255 255 / 11%);
   max-height: 300px;
   min-height: 300px;
   width: 100%;
@@ -194,15 +192,11 @@ h1 {
 }
 
 .ripple {
-  background-position: center;
-  transition: background 0.5s;
+  transition: transform 0.3s ease;
 }
 .ripple:hover {
-  background: #16293b radial-gradient(circle, transparent 1%, #16293b 1%)
-    center/15000%;
+  transform: scale(1.2);
 }
 .ripple:active {
-  background-color: #16293b;
-  background-size: 100%;
-  transition: background 0s;
+  transform: scale(0.8);
 }

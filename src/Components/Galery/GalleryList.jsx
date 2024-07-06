@@ -6,7 +6,7 @@ const GalleryList = ({ data }) => {
       {data?.map((gallery) => (
         <Link
           to={`/galerie/${gallery.id}`}
-          className="gallery-link"
+          className="gallery-link ripple"
           key={gallery.id}
         >
           <div key={gallery.id} className="gallery-item">
