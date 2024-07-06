@@ -83,9 +83,9 @@ const Intro = () => {
       </header>
       <div className="separator border mt-6"></div>
       <main className="p-10 flex justify-between items-center gap-10">
-        <div className="construction w-1/2">
+        <div className="construction w-1/2 ripple-intro">
           <Link to="/construction">
-            <h2 className="text-4xl font-bold text-center p-10">
+            <h2 className="times text-center p-10">
               {language === "FR" ? "CONSTRUCTION" : "CONSTRUCTION"}
             </h2>
             <div className=" border rounded-2xl introImg">
@@ -93,10 +93,10 @@ const Intro = () => {
             </div>
           </Link>
         </div>
-        <div className="lanching w-1/2">
+        <div className="lanching w-1/2 ripple-intro">
           <Link to="/launching">
-            <h2 className="text-4xl font-bold text-center p-10">
-              {language === "FR" ? "MISE A L'EAU" : "LAUNCHING"}
+            <h2 className="times text-center p-10">
+              {language === "FR" ? "LANCEMENT" : "LAUNCHING"}
             </h2>
             <div className=" border rounded-2xl introImg">
               <img src={LAUNCHING} alt="" />

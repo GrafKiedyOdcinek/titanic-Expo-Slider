@@ -20,6 +20,12 @@ h1 {
   line-height: 1.1;
 }
 
+.times {
+  font-family: "Times New Roman";
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
 .font-brygada {
   font-family: "Times New Roman";
   font-weight: 700;
@@ -199,4 +205,14 @@ h1 {
 }
 .ripple:active {
   transform: scale(0.8);
+}
+
+.ripple-intro {
+  transition: transform 0.3s ease;
+}
+.ripple-intro:hover {
+  transform: scale(1.02);
+}
+.ripple-intro:active {
+  transform: scale(0.9);
 }
