@@ -10,6 +10,7 @@ import Ornement from "./Components/ornements/Ornements";
 import CONSTRUCTION from "./assets/Construction/intro.jpg";
 import LAUNCHING from "./assets/Construction/launching.jpg";
 import { Link } from "react-router-dom";
+import FullScreenButton from "./Components/Fullscreen";
 const Intro = () => {
   const [language, setLanguage] = useState(
     localStorage.getItem("language") || "EN"
@@ -105,6 +106,7 @@ const Intro = () => {
         </div>
       </main>
       <Ornement />
+      <FullScreenButton />
     </div>
   );
 };
