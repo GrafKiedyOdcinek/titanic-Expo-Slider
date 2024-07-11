@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const GalleryList = ({ data }) => {
   return (
-    <div className="gallery-list mt-10">
+    <div className="gallery-list mt-10 px-10">
       {data?.map((gallery) => (
         <Link
           to={`/galerie/${gallery.id}`}
