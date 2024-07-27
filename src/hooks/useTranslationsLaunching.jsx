@@ -7,9 +7,9 @@ const useTranslationsLaunching = () => {
   useEffect(() => {
     const loadTranslations = async () => {
       const files = [
-        { language: "EN", path: "./Data/Lanching/LaunchingEN.json" },
-        { language: "FR", path: "./Data/Lanching/LaunchingFR.json" },
-        { language: "IT", path: "./Data/Lanching/LaunchingIT.json" },
+        { language: "EN", path: "../../Data/Lanching/LaunchingEN.json" },
+        { language: "FR", path: "../../Data/Lanching/LaunchingFR.json" },
+        { language: "IT", path: "../../Data/Lanching/LaunchingIT.json" },
       ];
 
       const translationsData = {};
