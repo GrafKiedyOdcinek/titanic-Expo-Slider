@@ -13,7 +13,10 @@ import { Link } from "react-router-dom";
 import FullScreenButton from "./Components/Fullscreen";
 import OrnementLeft from "./Components/ornements/OrnementLeft";
 import OrnementRight from "./Components/ornements/OrnementRight";
+import useTranslations from "./hooks/useTranslations";
+
 const Intro = () => {
+  const { languages } = useTranslations();
   const [language, setLanguage] = useState(
     localStorage.getItem("language") || "EN"
   );
@@ -32,6 +35,10 @@ const Intro = () => {
       FR: {
         title: "CONSTRUCTION DU TITANIC",
         date: "MARS 1909 - MAI 1912",
+      },
+      IT: {
+        title: "COSTRUZIONE DEL TITANIC",
+        date: "MARZO 1909 - MAGGIO 1912",
       },
     };
     return translations[language][key];
@@ -57,32 +64,24 @@ const Intro = () => {
                 </button>
               </PopoverHandler>
               <PopoverContent className="w-72 pb-0">
-                <div
-                  onClick={() => changeLanguage("FR")}
-                  className="mb-4 flex items-center gap-4 border-b border-blue-gray-50 pb-4 cursor-pointer"
-                >
-                  <div className="fr border rounded-full bg-[#0d1625] w-[30px] h-[30px] flex items-center justify-center">
-                    <p className="text-white">FR</p>
+                {languages.map((lang) => (
+                  <div
+                    key={lang}
+                    onClick={() => changeLanguage(lang)}
+                    className="mb-4 flex items-center gap-4 border-b border-blue-gray-50 pb-4 cursor-pointer"
+                  >
+                    <div
+                      className={`fr border rounded-full bg-[#0d1625] w-[30px] h-[30px] flex items-center justify-center`}
+                    >
+                      <p className="text-white">{lang}</p>
+                    </div>
+                    <div>
+                      <Typography variant="h6" color="blue-gray">
+                        {lang}
+                      </Typography>
+                    </div>
                   </div>
-                  <div>
-                    <Typography variant="h6" color="blue-gray">
-                      Français
-                    </Typography>
-                  </div>
-                </div>
-                <div
-                  onClick={() => changeLanguage("EN")}
-                  className="flex items-center gap-4 border-b border-blue-gray-50 pb-4 cursor-pointer"
-                >
-                  <div className="fr border rounded-full bg-[#0d1625] w-[30px] h-[30px] flex items-center justify-center">
-                    <p className="text-white">EN</p>
-                  </div>
-                  <div>
-                    <Typography variant="h6" color="blue-gray">
-                      English
-                    </Typography>
-                  </div>
-                </div>
+                ))}
               </PopoverContent>
             </Popover>
           </div>

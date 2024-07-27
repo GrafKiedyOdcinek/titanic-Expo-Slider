@@ -6,14 +6,14 @@ import {
   PopoverContent,
   Typography,
 } from "@material-tailwind/react";
-import galeryDataEN from "../../Data/galerieEN.json";
-import galeryDataFR from "../../Data/galerieFR.json";
 import InfiniteScroll from "react-infinite-scroll-component";
 import OrnementLeft from "../ornements/OrnementLeft";
 import OrnementRight from "../ornements/OrnementRight";
+import useTranslations from "../../hooks/useTranslations";
 
 const GalleryDetail = () => {
   const { id } = useParams();
+  const { translations, languages } = useTranslations();
   const [language, setLanguage] = useState(
     localStorage.getItem("language") || "EN"
   );
@@ -21,7 +21,7 @@ const GalleryDetail = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(null);
 
-  const data = language === "FR" ? galeryDataFR : galeryDataEN;
+  const data = translations[language] || [];
   const gallery = data.find((gallery) => gallery.id.toString() === id);
 
   const changeLanguage = (lang) => {
@@ -91,32 +91,24 @@ const GalleryDetail = () => {
                 </button>
               </PopoverHandler>
               <PopoverContent className="w-72 pb-0">
-                <div
-                  onClick={() => changeLanguage("FR")}
-                  className="mb-4 flex items-center gap-4 border-b border-blue-gray-50 pb-4 cursor-pointer"
-                >
-                  <div className="fr border rounded-full bg-[#0d1625] w-[30px] h-[30px] flex items-center justify-center">
-                    <p className="text-white">FR</p>
+                {languages.map((lang) => (
+                  <div
+                    key={lang}
+                    onClick={() => changeLanguage(lang)}
+                    className="mb-4 flex items-center gap-4 border-b border-blue-gray-50 pb-4 cursor-pointer"
+                  >
+                    <div
+                      className={`fr border rounded-full bg-[#0d1625] w-[30px] h-[30px] flex items-center justify-center`}
+                    >
+                      <p className="text-white">{lang}</p>
+                    </div>
+                    <div>
+                      <Typography variant="h6" color="blue-gray">
+                        {lang}
+                      </Typography>
+                    </div>
                   </div>
-                  <div>
-                    <Typography variant="h6" color="blue-gray">
-                      Français
-                    </Typography>
-                  </div>
-                </div>
-                <div
-                  onClick={() => changeLanguage("EN")}
-                  className="flex items-center gap-4 border-b border-blue-gray-50 pb-4 cursor-pointer"
-                >
-                  <div className="fr border rounded-full bg-[#0d1625] w-[30px] h-[30px] flex items-center justify-center">
-                    <p className="text-white">EN</p>
-                  </div>
-                  <div>
-                    <Typography variant="h6" color="blue-gray">
-                      English
-                    </Typography>
-                  </div>
-                </div>
+                ))}
               </PopoverContent>
             </Popover>
           </div>
@@ -187,7 +179,7 @@ const GalleryDetail = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              className="border rounded-full w-16 h-16 flex justify-center items-center text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white absolute left-[-3rem] ripple"
+              className="border rounded-full w-16 h-16 z-20 flex justify-center items-center text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white absolute left-[-3rem] ripple"
               onClick={handlePrevImage}
             >
               <i className="fa-solid fa-arrow-left text-black"></i>
@@ -198,7 +190,7 @@ const GalleryDetail = () => {
               className="max-h-full max-w-full"
             />
             <button
-              className="border rounded-full w-16 h-16 flex justify-center items-center text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white absolute right-[-3rem] ripple"
+              className="border rounded-full w-16 h-16 z-20 flex justify-center items-center text-center hover:bg-gray-200 hover:text-gray-800 transition-all bg-white absolute right-[-3rem] ripple"
               onClick={handleNextImage}
             >
               <i className="fa-solid fa-arrow-right text-black"></i>

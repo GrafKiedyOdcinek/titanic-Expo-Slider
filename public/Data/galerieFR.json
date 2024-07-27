@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "ANCHOR",
+        "title": "Ancre",
         "date": "1909",
         "mainImage": "/construction/ANCHOR/Fig20-1aa.jpg",
         "images": [
@@ -181,7 +181,7 @@
     },
     {
         "id": 4,
-        "title": "ELECTRICITY",
+        "title": "Electricité",
         "date": "1909",
         "mainImage": "/construction/Electric/elevat44or.jpg",
         "images": [
@@ -337,7 +337,7 @@
     },
     {
         "id": 5,
-        "title": "FACTORY",
+        "title": "Factory",
         "date": "1909",
         "mainImage": "/construction/FACTORY/Fig 1 - 10c.jpg",
         "images": [
@@ -429,7 +429,7 @@
     },
     {
         "id": 6,
-        "title": "FUNNEL",
+        "title": "Funnel",
         "date": "1909",
         "mainImage": "/construction/FUNNEL/back to service 1913.jpg",
         "images": [
@@ -1492,7 +1492,7 @@
         ]
     },
     {
-        "id": 14,
+        "id": 16,
         "title": "VENTILATION",
         "date": "1909",
         "mainImage": "/construction/VENTILATION/Fig 19 - 3.jpg",

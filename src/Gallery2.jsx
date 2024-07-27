@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import "./style/index.css";
 import {
   Popover,
@@ -7,29 +7,27 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
-import galeryDataEN from "./Data/LaunchingEN.json";
-import galeryDataFR from "./Data/LaunchingFR.json";
 import GalleryListLaunching from "./Components/Galery/GalleryListLaunching";
 import Ornement from "./Components/ornements/Ornements";
 import { Link } from "react-router-dom";
 import OrnementLeft from "./Components/ornements/OrnementLeft";
 import OrnementRight from "./Components/ornements/OrnementRight";
+import useTranslationsLaunching from "./hooks/useTranslationsLaunching";
 
 function Gallery2() {
-  const [data, setData] = useState([]);
+  const { translations, languages } = useTranslationsLaunching();
+
   const [language, setLanguage] = useState(
     localStorage.getItem("language") || "EN"
   );
 
+  const data = useMemo(
+    () => translations[language] || [],
+    [language, translations]
+  );
+
   useEffect(() => {
-    const loadData = () => {
-      if (language === "FR") {
-        setData(galeryDataFR);
-      } else {
-        setData(galeryDataEN);
-      }
-    };
-    loadData();
+    localStorage.setItem("language", language);
   }, [language]);
 
   const changeLanguage = (lang) => {
@@ -46,6 +44,10 @@ function Gallery2() {
       FR: {
         title: "LAUNCHING DU TITANIC",
         date: "MARS 1909 - MAI 1912",
+      },
+      IT: {
+        title: "COSTRUZIONE DEL TITANIC",
+        date: "MARZO 1909 - MAGGIO 1912",
       },
     };
     return translations[language][key];
@@ -76,32 +78,24 @@ function Gallery2() {
                 </button>
               </PopoverHandler>
               <PopoverContent className="w-72 pb-0">
-                <div
-                  onClick={() => changeLanguage("FR")}
-                  className="mb-4 flex items-center gap-4 border-b border-blue-gray-50 pb-4 cursor-pointer"
-                >
-                  <div className="fr border rounded-full bg-[#0d1625] w-[30px] h-[30px] flex items-center justify-center">
-                    <p className="text-white">FR</p>
+                {languages.map((lang) => (
+                  <div
+                    key={lang}
+                    onClick={() => changeLanguage(lang)}
+                    className="mb-4 flex items-center gap-4 border-b border-blue-gray-50 pb-4 cursor-pointer"
+                  >
+                    <div
+                      className={`fr border rounded-full bg-[#0d1625] w-[30px] h-[30px] flex items-center justify-center`}
+                    >
+                      <p className="text-white">{lang}</p>
+                    </div>
+                    <div>
+                      <Typography variant="h6" color="blue-gray">
+                        {lang}
+                      </Typography>
+                    </div>
                   </div>
-                  <div>
-                    <Typography variant="h6" color="blue-gray">
-                      Français
-                    </Typography>
-                  </div>
-                </div>
-                <div
-                  onClick={() => changeLanguage("EN")}
-                  className="flex items-center gap-4 border-b border-blue-gray-50 pb-4 cursor-pointer"
-                >
-                  <div className="fr border rounded-full bg-[#0d1625] w-[30px] h-[30px] flex items-center justify-center">
-                    <p className="text-white">EN</p>
-                  </div>
-                  <div>
-                    <Typography variant="h6" color="blue-gray">
-                      English
-                    </Typography>
-                  </div>
-                </div>
+                ))}
               </PopoverContent>
             </Popover>
           </div>

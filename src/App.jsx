@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import "./style/index.css";
 import {
   Popover,
@@ -7,36 +7,33 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
-import galeryDataEN from "./Data/galerieEN.json";
-import galeryDataFR from "./Data/galerieFR.json";
 import GalleryList from "./Components/Galery/GalleryList";
 import Ornement from "./Components/ornements/Ornements";
 import { Link } from "react-router-dom";
 import FullScreenButton from "./Components/Fullscreen";
 import OrnementLeft from "./Components/ornements/OrnementLeft";
 import OrnementRight from "./Components/ornements/OrnementRight";
+import useTranslations from "./hooks/useTranslations";
 
 function App() {
-  const [data, setData] = useState([]);
+  const { translations, languages } = useTranslations();
   const [language, setLanguage] = useState(
     localStorage.getItem("language") || "EN"
   );
 
-  useEffect(() => {
-    const loadData = () => {
-      if (language === "FR") {
-        setData(galeryDataFR);
-      } else {
-        setData(galeryDataEN);
-      }
-    };
-    loadData();
-  }, [language]);
+  const data = useMemo(
+    () => translations[language] || [],
+    [language, translations]
+  );
 
   const changeLanguage = (lang) => {
     setLanguage(lang);
     localStorage.setItem("language", lang);
   };
+
+  useEffect(() => {
+    localStorage.setItem("language", language);
+  }, [language]);
 
   const getTranslation = (key) => {
     const translations = {
@@ -47,6 +44,10 @@ function App() {
       FR: {
         title: "CONSTRUCTION DU TITANIC",
         date: "MARS 1909 - MAI 1912",
+      },
+      IT: {
+        title: "COSTRUZIONE DEL TITANIC",
+        date: "MARZO 1909 - MAGGIO 1912",
       },
     };
     return translations[language][key];
@@ -79,32 +80,24 @@ function App() {
                 </button>
               </PopoverHandler>
               <PopoverContent className="w-72 pb-0">
-                <div
-                  onClick={() => changeLanguage("FR")}
-                  className="mb-4 flex items-center gap-4 border-b border-blue-gray-50 pb-4 cursor-pointer"
-                >
-                  <div className="fr border rounded-full bg-[#0d1625] w-[30px] h-[30px] flex items-center justify-center">
-                    <p className="text-white">FR</p>
+                {languages.map((lang) => (
+                  <div
+                    key={lang}
+                    onClick={() => changeLanguage(lang)}
+                    className="mb-4 flex items-center gap-4 border-b border-blue-gray-50 pb-4 cursor-pointer"
+                  >
+                    <div
+                      className={`fr border rounded-full bg-[#0d1625] w-[30px] h-[30px] flex items-center justify-center`}
+                    >
+                      <p className="text-white">{lang}</p>
+                    </div>
+                    <div>
+                      <Typography variant="h6" color="blue-gray">
+                        {lang}
+                      </Typography>
+                    </div>
                   </div>
-                  <div>
-                    <Typography variant="h6" color="blue-gray">
-                      Français
-                    </Typography>
-                  </div>
-                </div>
-                <div
-                  onClick={() => changeLanguage("EN")}
-                  className="flex items-center gap-4 border-b border-blue-gray-50 pb-4 cursor-pointer"
-                >
-                  <div className="fr border rounded-full bg-[#0d1625] w-[30px] h-[30px] flex items-center justify-center">
-                    <p className="text-white">EN</p>
-                  </div>
-                  <div>
-                    <Typography variant="h6" color="blue-gray">
-                      English
-                    </Typography>
-                  </div>
-                </div>
+                ))}
               </PopoverContent>
             </Popover>
           </div>
