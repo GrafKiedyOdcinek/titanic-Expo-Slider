@@ -14,12 +14,20 @@ import FullScreenButton from "./Components/Fullscreen";
 import OrnementLeft from "./Components/ornements/OrnementLeft";
 import OrnementRight from "./Components/ornements/OrnementRight";
 import useTranslations from "./hooks/useTranslations";
-
+import TitleTranslation from "./../public/Data/constructionTitle.json";
 function App() {
   const { translations, languages } = useTranslations();
   const [language, setLanguage] = useState(
     localStorage.getItem("language") || "EN"
   );
+
+  const getTranslation = (key) => {
+    const translationItem = TitleTranslation.find(
+      (item) => item?.translation?.[key]
+    );
+
+    return translationItem.translation[key] || key;
+  };
 
   const data = useMemo(
     () => translations[language] || [],
@@ -35,24 +43,6 @@ function App() {
     localStorage.setItem("language", language);
   }, [language]);
 
-  const getTranslation = (key) => {
-    const translations = {
-      EN: {
-        title: "CONSTRUCTION OF THE TITANIC",
-        date: "MARCH 1909 - MAY 1912",
-      },
-      FR: {
-        title: "CONSTRUCTION DU TITANIC",
-        date: "MARS 1909 - MAI 1912",
-      },
-      IT: {
-        title: "COSTRUZIONE DEL TITANIC",
-        date: "MARZO 1909 - MAGGIO 1912",
-      },
-    };
-    return translations[language][key];
-  };
-
   return (
     <div className="p-4">
       <OrnementLeft />
@@ -67,8 +57,8 @@ function App() {
             </Link>
           </div>
           <div className="grade flex flex-col gap-1 justify-center w-full text-4xl items-center">
-            <h1 className="benchnine-bold">{getTranslation("title")}</h1>
-            <p className="font-brygada">{getTranslation("date")}</p>
+            <h1 className="benchnine-bold">{getTranslation(language)}</h1>
+            {/* <p className="font-brygada">{getTranslation("date")}</p> */}
           </div>
           <div className="language flex gap-6">
             <Popover placement="bottom-end">

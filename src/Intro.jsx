@@ -14,6 +14,7 @@ import FullScreenButton from "./Components/Fullscreen";
 import OrnementLeft from "./Components/ornements/OrnementLeft";
 import OrnementRight from "./Components/ornements/OrnementRight";
 import useTranslations from "./hooks/useTranslations";
+import TitleTranslation from "../public/Data/TitleTranslation.json";
 
 const Intro = () => {
   const { languages } = useTranslations();
@@ -27,21 +28,11 @@ const Intro = () => {
   };
 
   const getTranslation = (key) => {
-    const translations = {
-      EN: {
-        title: "CONSTRUCTION OF THE TITANIC",
-        date: "MARCH 1909 - MAY 1912",
-      },
-      FR: {
-        title: "CONSTRUCTION DU TITANIC",
-        date: "MARS 1909 - MAI 1912",
-      },
-      IT: {
-        title: "COSTRUZIONE DEL TITANIC",
-        date: "MARZO 1909 - MAGGIO 1912",
-      },
-    };
-    return translations[language][key];
+    const translationItem = TitleTranslation.find(
+      (item) => item?.translation?.[key]
+    );
+
+    return translationItem.translation[key] || key;
   };
 
   return (
@@ -51,8 +42,7 @@ const Intro = () => {
       <div className="flex justify-center">
         <header className="flex  sm:flex-row justify-center items-center gap-4 w-[65%]">
           <div className="grade flex flex-col gap-1 justify-center w-full text-4xl items-center">
-            <h1 className="benchnine-bold">{getTranslation("title")}</h1>
-            <p className="font-brygada">{getTranslation("date")}</p>
+            <h1 className="benchnine-bold">{getTranslation(language)}</h1>
           </div>
           <div className="language flex gap-6">
             <Popover placement="bottom-end">

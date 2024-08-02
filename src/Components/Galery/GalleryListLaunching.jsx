@@ -11,7 +11,7 @@ const GalleryListLaunching = ({ data }) => {
         >
           <div key={gallery.id} className="gallery-item">
             <img src={gallery.mainImage} alt={gallery.title} />
-            <h3 className="benchnine">{gallery.title}</h3>
+            <h3 className="benchnine">{gallery.GaleryTitle}</h3>
           </div>
         </Link>
       ))}

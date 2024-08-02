@@ -77,7 +77,7 @@ const GalleryLaunching = () => {
           </Link>
           <div className="grade flex flex-col gap-1 justify-center w-full text-4xl items-center">
             <h1 className="benchnine-bold uppercase text-center">
-              {gallery?.title}
+              {gallery?.GaleryTitle}
             </h1>
             <p className="font-brygada text-center">{gallery?.date}</p>
           </div>
