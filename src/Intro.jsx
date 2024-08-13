@@ -84,7 +84,11 @@ const Intro = () => {
         <div className="construction w-[40%] ripple-intro">
           <Link to="/construction">
             <h2 className="times text-center p-10">
-              {language === "FR" ? "CONSTRUCTION" : "CONSTRUCTION"}
+              {language === "FR"
+                ? "CONSTRUCTION"
+                : language === "IT"
+                ? "COSTRUZIONE"
+                : "CONSTRUCTION"}
             </h2>
             <div className=" border rounded-2xl introImg">
               <img src={CONSTRUCTION} alt="" />
@@ -94,7 +98,11 @@ const Intro = () => {
         <div className="lanching w-[40%] ripple-intro">
           <Link to="/launching">
             <h2 className="times text-center p-10">
-              {language === "FR" ? "LANCEMENT" : "LAUNCHING"}
+              {language === "FR"
+                ? "LANCEMENT"
+                : language === "IT"
+                ? "LANCIO"
+                : "LAUNCHING"}
             </h2>
             <div className=" border rounded-2xl introImg">
               <img src={LAUNCHING} alt="" />
