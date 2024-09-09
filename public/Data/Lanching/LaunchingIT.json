@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "title": "CABIN 1st",
-        "GaleryTitle": "Cabin 1st IT",
+        "title": "CABINA 1 classe",
+        "GaleryTitle": "Cabina 1 classe",
         "date": "1909",
         "mainImage": "/launching/CABIN 1st/Fig 25 - 81.jpg",
         "images": [
@@ -410,8 +410,8 @@
     },
     {
         "id": 2,
-        "title": "CABIN 2nd",
-        "GaleryTitle": "Cabin 2nd",
+        "title": "CABINA 2 classe",
+        "GaleryTitle": "Cabina di Seconda classe",
         "date": "1909",
         "mainImage": "/launching/CABIN 2nd/NMR-31-D23.jpg",
         "images": [
@@ -503,8 +503,8 @@
     },
     {
         "id": 3,
-        "title": "CABIN 3rd",
-        "GaleryTitle": "Cabin 3rd",
+        "title": "CABINA 3 classe",
+        "GaleryTitle": "Cabina di Terza classe",
         "date": "1909",
         "mainImage": "/launching/CABIN 3rd/NMR_3rdCl_Cabin151_1914FACES-sharpen-enhance-2x.jpg",
         "images": [
@@ -528,8 +528,8 @@
     },
     {
         "id": 4,
-        "title": "DINNER 1st",
-        "GaleryTitle": "Cabin 2nd",
+        "title": "SALA DA PRANZO prima classe",
+        "GaleryTitle": "Sala da pranzo",
         "date": "1909",
         "mainImage": "/launching/DINNER 1st/LOC_1st Cl_DiningRm_1911.jpg",
         "images": [
@@ -657,8 +657,8 @@
     },
     {
         "id": 5,
-        "title": "DINNER 2nd",
-        "GaleryTitle": "DINNER 2nd",
+        "title": "SALA DA PRANZO 2 classe",
+        "GaleryTitle": "Sala da pranzo di 2 classe",
         "date": "1909",
         "mainImage": "/launching/DINNER 2nd/RarePhoto_MrsJacobs_early20.jpg",
         "images": [
@@ -710,8 +710,8 @@
     },
     {
         "id": 6,
-        "title": "DINNER 3rd",
-        "GaleryTitle": "DINNER 3rd",
+        "title": "SALA DA PRANZO di terza classe",
+        "GaleryTitle": "Sala da pranzo di terza classe",
         "date": "1909",
         "mainImage": "/launching/DINNER 3rd/NRM-48-closeup.jpg",
         "images": [
@@ -751,8 +751,8 @@
     },
     {
         "id": 7,
-        "title": "PORCELAIN",
-        "GaleryTitle": "PORCELAINE",
+        "title": "PORCELLANE",
+        "GaleryTitle": "Porcellane",
         "date": "1909",
         "mainImage": "/launching/PORCELAIN/Fig 27 - 8k.jpg",
         "images": [
@@ -841,8 +841,8 @@
     },
     {
         "id": 9,
-        "title": "BARBER",
-        "GaleryTitle": "BARBER",
+        "title": "BARBIERE",
+        "GaleryTitle": "BARBIERE",
         "date": "1909",
         "mainImage": "/launching/BARBER/Fig 32 - 34a.jpg",
         "images": [
@@ -858,8 +858,8 @@
     },
     {
         "id": 10,
-        "title": "ELEVATOR",
-        "GaleryTitle": "ELEVATOR",
+        "title": "ASCENSORE",
+        "GaleryTitle": "ASCENSORE",
         "date": "1909",
         "mainImage": "/launching/ELEVATOR/LargeElevator.jpg",
         "images": [
@@ -899,8 +899,8 @@
     },
     {
         "id": 11,
-        "title": "GYM",
-        "GaleryTitle": "GYM",
+        "title": "PALESTRA",
+        "GaleryTitle": "PALESTRA",
         "date": "1909",
         "mainImage": "/launching/GYM/ILN-8-Gymnasium.jpg",
         "images": [
@@ -1025,8 +1025,8 @@
     },
     {
         "id": 13,
-        "title": "SWIMMING POOL",
-        "GaleryTitle": "SWIMMING POOL",
+        "title": "PISCINA",
+        "GaleryTitle": "PISCINA",
         "date": "1909",
         "mainImage": "/launching/SWIMMING POOL/Fig 34 - 5a.jpg",
         "images": [
@@ -1070,8 +1070,8 @@
     },
     {
         "id": 14,
-        "title": "TURKISH BATH",
-        "GaleryTitle": "TURKISH BATH",
+        "title": "BAGNO TURCO",
+        "GaleryTitle": "BAGNO TURCO",
         "date": "1909",
         "mainImage": "/launching/TURKISH BATH/NMR-42-CoolingRoom.jpg",
         "images": [
@@ -1107,8 +1107,8 @@
     },
     {
         "id": 15,
-        "title": "ON THE DECK",
-        "GaleryTitle": "ON THE DECK",
+        "title": "SUL PONTE",
+        "GaleryTitle": "SUL PONTE",
         "date": "1909",
         "mainImage": "/launching/ON THE DECK/1914OlympicPassengers_onBoatDec.jpg",
         "images": [
@@ -1744,8 +1744,8 @@
     },
     {
         "id": 20,
-        "title": "READING & WRITTING",
-        "GaleryTitle": "READING & WRITTING",
+        "title": "SALA LETTURA E SCRITTURA",
+        "GaleryTitle": "SALA LETTURA E SCRITTURA",
         "date": "1909",
         "mainImage": "/launching/READING & WRITTING/H1571-ReadnWrite.jpg",
         "images": [
@@ -1797,8 +1797,8 @@
     },
     {
         "id": 21,
-        "title": "RECEPTION ROOM",
-        "GaleryTitle": "RECEPTION ROOM",
+        "title": "RECEPTION",
+        "GaleryTitle": "RECEPTION",
         "date": "1909",
         "mainImage": "/launching/RECEPTION ROOM/OlympicReceptionRoom.jpg",
         "images": [
@@ -1850,8 +1850,8 @@
     },
     {
         "id": 22,
-        "title": "SITTING ROOM",
-        "GaleryTitle": "SITTING ROOM",
+        "title": "SALOTTO",
+        "GaleryTitle": "SALOTTO",
         "date": "1909",
         "mainImage": "/launching/SITTING ROOM/Fig 32 - 19.jpg",
         "images": [
@@ -1907,8 +1907,8 @@
     },
     {
         "id": 23,
-        "title": "SMOKE ROOM 1st",
-        "GaleryTitle": "SMOKE ROOM 1st",
+        "title": "SALA FUMATORI DI 1 CLASSE",
+        "GaleryTitle": "SALA FUMATORI DI PRIMA CLASSE",
         "date": "1909",
         "mainImage": "/launching/SMOKE ROOM 1st/OlympicMovie_SmokeRoom1.jpg",
         "images": [
@@ -2008,8 +2008,8 @@
     },
     {
         "id": 24,
-        "title": "SMOKE ROOM 2nd",
-        "GaleryTitle": "SMOKE ROOM 2nd",
+        "title": "SALA FUMATORI DI SECONDA CLASSE",
+        "GaleryTitle": "SALA FUMATORI DI SECONDA CLASSE",
         "date": "1909",
         "mainImage": "/launching/SMOKE ROOM 2nd/NMR-23-2ndcl-smokeroom.jpg",
         "images": [
@@ -2037,8 +2037,8 @@
     },
     {
         "id": 25,
-        "title": "SMOKE ROOM 3rd",
-        "GaleryTitle": "SMOKE ROOM 3rd",
+        "title": "SALA FUMATORI DI TERZA CLASSE",
+        "GaleryTitle": "SALA FUMATORI DI TERZA CLASSE",
         "date": "1909",
         "mainImage": "/launching/SMOKE ROOM 3rd/ThirdClassSmokeRoom_1930s.jpg",
         "images": [
@@ -2066,8 +2066,8 @@
     },
     {
         "id": 26,
-        "title": "STAIRCASE",
-        "GaleryTitle": "STAIRCASE",
+        "title": "SCALE",
+        "GaleryTitle": "SCALE",
         "date": "1909",
         "mainImage": "/launching/STAIRCASE/Fig 25 - 75.jpg",
         "images": [
@@ -2115,8 +2115,8 @@
     },
     {
         "id": 27,
-        "title": "GRAND STAIRCASE",
-        "GaleryTitle": "GRAND STAIRCASE",
+        "title": "GRANDE SCALONE",
+        "GaleryTitle": "GRANDE SCALONE",
         "date": "1909",
         "mainImage": "/launching/GRAND STAIRCASE/SCA_NMR7_aftstairAdeck.jpg.jpg",
         "images": [
@@ -2204,8 +2204,8 @@
     },
     {
         "id": 28,
-        "title": "MAIL SERVICE",
-        "GaleryTitle": "MAIL SERVICE",
+        "title": "UFFiCIO POSTALE",
+        "GaleryTitle": "UFFICIO POSTALE",
         "date": "1909",
         "mainImage": "/launching/MAIL SERVICE/Fig 36 - 6.jpg",
         "images": [
@@ -2225,8 +2225,8 @@
     },
     {
         "id": 29,
-        "title": "MARCONI TELEGRAM",
-        "GaleryTitle": "MARCONI TELEGRAM",
+        "title": "SALA MARCONI",
+        "GaleryTitle": "SALA MARCONI",
         "date": "1909",
         "mainImage": "/launching/MARCONI TELEGRAM/Fig 24 - 22 .jpg",
         "images": [
@@ -2426,8 +2426,8 @@
     },
     {
         "id": 30,
-        "title": "KITCHEN",
-        "GaleryTitle": "KITCHEN",
+        "title": "CUCINE",
+        "GaleryTitle": "CUCINE",
         "date": "1909",
         "mainImage": "/launching/KITCHEN/Fig 27 - 1.jpg",
         "images": [
@@ -2527,8 +2527,8 @@
     },
     {
         "id": 31,
-        "title": "DEPARTURE",
-        "GaleryTitle": "DEPARTURE",
+        "title": "PARTENZA",
+        "GaleryTitle": "PARTENZA",
         "date": "1909",
         "mainImage": "/launching/DEPARTURE/201.jpg",
         "images": [
@@ -2800,8 +2800,8 @@
     },
     {
         "id": 32,
-        "title": "AFTERMATH",
-        "GaleryTitle": "AFTERMATH",
+        "title": "LE CONSEGUENZE",
+        "GaleryTitle": "LE CONSEGUENZE",
         "date": "1909",
         "mainImage": "/launching/AFTERMATH/TITANIC_disaster._Senate_Investigating_Committee_questioning_individuals_at_the_Waldorf_Astoria_LCCN2002721385.jpg",
         "images": [
@@ -2933,8 +2933,8 @@
     },
     {
         "id": 33,
-        "title": "WRECK",
-        "GaleryTitle": "WRECK",
+        "title": "RELITTO",
+        "GaleryTitle": "RELITTO",
         "date": "1909",
         "mainImage": "/launching/WRECK/Titanic_wreck_bow2.jpg",
         "images": [
