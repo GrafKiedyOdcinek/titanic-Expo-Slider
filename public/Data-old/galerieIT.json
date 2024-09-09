@@ -55,7 +55,7 @@
     {
         "id": 2,
         "title": "CONSTRUCTION INSIDE",
-        "GaleryTitle": "CONSTRUCTION INSIDE",
+        "GaleryTitle": "COSTRUZIONE INTERNA",
         "date": "1909",
         "mainImage": "/construction/CONSTRUCTION INSIDE/015.jpg",
         "images": [
@@ -184,7 +184,7 @@
     {
         "id": 3,
         "title": "CONSTRUCTION OUTSIDE",
-        "GaleryTitle": "CONSTRUCTION OUTSIDE",
+        "GaleryTitle": "COSTRUZIONE ESTERNA",
         "date": "1909",
         "mainImage": "/construction/CONSTRUCTION OUTSIDE/Fig 4 - 10b.jpg",
         "images": [
@@ -441,7 +441,7 @@
     {
         "id": 4,
         "title": "HULL",
-        "GaleryTitle": "HULL",
+        "GaleryTitle": "SCAFO",
         "date": "1909",
         "mainImage": "/construction/HULL/Fig 4 - 10d.jpg",
         "images": [
@@ -646,7 +646,7 @@
     {
         "id": 5,
         "title": "FUNNEL",
-        "GaleryTitle": "FUNNEL",
+        "GaleryTitle": "FUMAIOLO",
         "date": "1909",
         "mainImage": "/construction/FUNNEL/Fig 13 - 9.jpg",
         "images": [
@@ -723,7 +723,7 @@
     {
         "id": 6,
         "title": "STERN",
-        "GaleryTitle": "STERN",
+        "GaleryTitle": "POPPA",
         "date": "1909",
         "mainImage": "/construction/STERN/Fig 5 - 14a.jpg",
         "images": [
@@ -816,7 +816,7 @@
     {
         "id": 7,
         "title": "PROPELLERS",
-        "GaleryTitle": "PROPELLERS",
+        "GaleryTitle": "ELICHE",
         "date": "1909",
         "mainImage": "/construction/PROPELLERS/039.jpg",
         "images": [
@@ -881,7 +881,7 @@
     {
         "id": 8,
         "title": "ELECTRIC MOTOR",
-        "GaleryTitle": "ELECTRIC MOTOR",
+        "GaleryTitle": "MOTORE ELETTRICO",
         "date": "1909",
         "mainImage": "/construction/ELECTRIC MOTOR/Fig 17 - 17.jpg",
         "images": [
@@ -958,7 +958,7 @@
     {
         "id": 9,
         "title": "STEAM MOTOR",
-        "GaleryTitle": "STEAM MOTOR",
+        "GaleryTitle": "MOTORE A VAPORE",
         "date": "1909",
         "mainImage": "/construction/STEAM MOTOR/Fig 6 - 4.jpg",
         "images": [
@@ -1170,8 +1170,8 @@
     },
     {
         "id": 10,
-        "title": "VENTILLATION",
-        "GaleryTitle": "VENTILLATION",
+        "title": "VENTILAZIONE",
+        "GaleryTitle": "VENTILAZIONE",
         "date": "1909",
         "mainImage": "/construction/VENTILLATION/Fig 19 - 1.jpg",
         "images": [
@@ -1447,8 +1447,8 @@
     },
     {
         "id": 11,
-        "title": "WINDOWS & PORTHOLE",
-        "GaleryTitle": "WINDOWS & PORTHOLE",
+        "title": "FINESTRE E OBLO'",
+        "GaleryTitle": "FINESTRE E OBLO'",
         "date": "1909",
         "mainImage": "/construction/WINDOWS & PORTHOLE/Fig 11 - 1.jpg",
         "images": [
@@ -1557,19 +1557,19 @@
                 "description": ""
             },
             {
-                "url": "/construction/WINDOWS & PORTHOLE/Fig 11 - 26a.jpg",
+                "url": "/construction/WINDOWs & PORTHOLE/Fig 11 - 26a.jpg",
                 "description": ""
             },
             {
-                "url": "/construction/WINDOWS & PORTHOLE/Fig 11 - 27a.jpg",
+                "url": "/construction/WINDOWs & PORTHOLE/Fig 11 - 27a.jpg",
                 "description": ""
             }
         ]
     },
     {
         "id": 12,
-        "title": "ANCHOR",
-        "GaleryTitle": "ANCHOR",
+        "title": "ANCORA",
+        "GaleryTitle": "ANCORA",
         "date": "1909",
         "mainImage": "/construction/ANCHOR/Fig 20 - 22.jpg",
         "images": [
@@ -1753,8 +1753,8 @@
     },
     {
         "id": 13,
-        "title": "LIFEBOAT",
-        "GaleryTitle": "LIFEBOAT",
+        "title": "SCIALUPPA DI SALVATAGGIO",
+        "GaleryTitle": "SCIALUPPA DI SALVATAGGIO",
         "date": "1909",
         "mainImage": "/construction/LIFEBOAT/Fig 23 - 13.jpg",
         "images": [
@@ -2070,8 +2070,8 @@
     },
     {
         "id": 14,
-        "title": "FINISH",
-        "GaleryTitle": "FINISH",
+        "title": "FINITURA",
+        "GaleryTitle": "FINITURA",
         "date": "1909",
         "mainImage": "/construction/FINISH/101.jpg",
         "images": [
@@ -2123,8 +2123,8 @@
     },
     {
         "id": 15,
-        "title": "LAYOUT",
-        "GaleryTitle": "LAYOUT",
+        "title": "DISPOSIZIONE",
+        "GaleryTitle": "DISPOSIZIONE",
         "date": "1909",
         "mainImage": "/construction/LAYOUT/Fig 11 - 26b.jpg",
         "images": [
@@ -3140,8 +3140,8 @@
     },
     {
         "id": 16,
-        "title": "STOCKING PLACES",
-        "GaleryTitle": "STOCKING PLACES",
+        "title": "LUOGHI DI STOCCAGGIO",
+        "GaleryTitle": "LUOGHI DI STOCCAGGIO",
         "date": "1909",
         "mainImage": "/construction/STOCKING PLACES/Fig 18 - 1.jpg",
         "images": [
@@ -3221,8 +3221,8 @@
     },
     {
         "id": 17,
-        "title": "OTHER",
-        "GaleryTitle": "OTHER",
+        "title": "ALTRO",
+        "GaleryTitle": "ALTRO",
         "date": "1909",
         "mainImage": "/construction/OTHER/Fig 22 - 15.jpg",
         "images": [
